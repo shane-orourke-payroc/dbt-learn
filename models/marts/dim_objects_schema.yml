@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+    - name: dim_objects
+      description: "A dim_objects dbt model"
+      columns:
+          - name: table_catalog
+            description: "table_catalog"
+            tests:
+                - not_null
+          - name: table_schema
+            description: "table_schema"
+            tests:
+                - not_null
+          - name: table_name
+            description: "table_name"
+            tests:
+                - not_null
+          - name: CONSTRAINT_NAME
+            description: "CONSTRAINT_NAME"
+            tests:
+                - not_null
+          - name: CLUSTERING_KEY
+            description: "CLUSTERING_KEY"
+            #tests:
+                #- unique
+                #- not_null
