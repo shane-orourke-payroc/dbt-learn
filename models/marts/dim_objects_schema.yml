@@ -25,12 +25,12 @@ models:
             description: "CLUSTERING_KEY"
             tests:
                 - unique:
-                  config:
-                    severity: warn
-                    error_if: ">5"
-                    warn_if: ">1"
+                    config:
+                      severity: warn
+                      error_if: ">5"
+                      warn_if: ">1"
                 - not_null:
-                  config:
-                    severity: warn
-                    error_if: ">5"
-                    warn_if: ">1"
+                      config:
+                        severity: warn
+                        error_if: ">5"
+                        warn_if: ">1"
